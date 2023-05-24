@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <title>Document</title>
+    <style>
+        .anc{
+  color:blue;
+  text-decoration: underline;
+ 
+}
+
+.Container{
+  margin-left:40px;
+  margin-top:40px;
+  padding:20px
+}
+p{
+  color:rgb(49, 48, 48)
+}
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+   <script>
+   const myElement = React.createElement('div', {}, '',
+    React.createElement('h1', {className: 'title'}, 'Topic Coverd'),
+    React.createElement('p', {className: 'description'}, 'The following is a lst of all topics cover in the MDN learing area.'),
+    React.createElement('a',{className:'anc'},'Getting started with the web'),
+    React.createElement('p',{className:'description'},'Provide a perticular introduction to web development for complete beinners.'),
+    React.createElement('a',{className:'anc'},'HTML-Structuring the web'),
+  React.createElement('p',{className:'description'},'Html is the language that we use to structure the different parts of our content and define what their meaning or purpose is. This topic teaches HTML in detail.'),
+  React.createElement('a',{className:'anc'},'CSS-styling the the web'),
+ React.createElement('p',{className:'description'},'CSS is language that we use to control our web content style and layout ,as well as adding behaviour like animation .This provides comprehensive covrage of CSS .') );
+ 
+   
+  
+ 
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(myElement);
+    
+
+   </script> 
+    
+</body>
+</html>
